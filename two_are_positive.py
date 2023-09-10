@@ -6,4 +6,4 @@ def two_are_positive(a, b, c):
         positive_count += 1
     if c > 0:
         positive_count += 1
-	return positive count == 2
+return positive count == 2
