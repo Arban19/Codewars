@@ -4,5 +4,6 @@
 
 
 def reverse_seq(n):
-    for num in range(n):
         return list(range(n,0,-1))
+
+print(reverse_seq(5))
