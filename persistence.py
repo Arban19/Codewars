@@ -15,3 +15,5 @@ def persistence(n):
         n = product
         steps += 1
     return steps
+
+print(persistence(45))
