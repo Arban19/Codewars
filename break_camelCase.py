@@ -10,10 +10,8 @@ Example
 def solution(sentence):
     i = 0
     words = []
-    for j_char in enumerate(sentence):
-        char = j_char[1]
+    for j, char in enumerate(sentence):
         if char.isupper():
-            j = j_char[0]
             words.append(sentence[i:j])
             i = j
     words.append(sentence[i:])
