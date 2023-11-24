@@ -8,9 +8,8 @@ filter_list([1,2,'aasf','1','123',123]) == [1,2,123] """
 def filter_list(l):
     result = []
     for item in l:
-        if isinstance(item,int):
-            if str(item).isdigit():
-                result.append(item)
+        if isinstance(item,int) and str(item).isdigit():
+            result.append(item)
     return result
 
 def filter_list(l):
