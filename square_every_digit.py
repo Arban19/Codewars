@@ -12,8 +12,20 @@ def square_digits(num):
         y.append(str(int(n)**2))
         z = ""
         for char in y:
-               z = "".join(y)
+            z = "".join(y)
     return z
 
 def square_digits(num):
     return int(''.join(str(int(n)**2) for n in str(num)))
+
+def square_and_str(x):
+    return str(x**2)
+
+def square_digits(num):
+    digits = map(int, str(num))
+    squared_digits = map(square_and_str, digits)
+    output = "".join(squared_digits)
+    return output
+
+assert square_digits(9119) == "811181"
+assert  square_digits(765) == "493625"
